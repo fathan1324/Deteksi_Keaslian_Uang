@@ -31,6 +31,7 @@ def load_model():
     device = torch.device("cpu")  # PAKSA CPU (deploy-safe)
     model = DetectMultiBackend("best_windows.pt", device=device)
     model.model.float()
+    model.model.eval()
     return model
 
 model = load_model()
