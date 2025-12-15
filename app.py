@@ -29,7 +29,7 @@ from utils.augmentations import letterbox
 @st.cache_resource
 def load_model():
     device = torch.device("cpu")  # PAKSA CPU (deploy-safe)
-    model = DetectMultiBackend("best_windows.pt", device=device)
+    model = DetectMultiBackend("best_windows1.pt", device=device)
     model.model.float()
     model.model.eval()
     return model
