@@ -1,0 +1,8 @@
+streamlit
+torch
+opencv-python-headless
+numpy
+Pillow
+PyYAML
+tqdm
+matplotlib
