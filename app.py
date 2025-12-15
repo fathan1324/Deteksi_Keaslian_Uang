@@ -18,12 +18,10 @@ st.caption("Versi deploy (snapshot kamera & upload gambar – CPU)")
 
 # ================== YOLOv5 PATH ==================
 FILE = Path(__file__).resolve()
-ROOT = FILE.parent / "yolov5"
-sys.path.append(str(ROOT))
 
-from models.common import DetectMultiBackend
-from utils.general import non_max_suppression, scale_boxes
-from utils.augmentations import letterbox
+from yolov5.models.common import DetectMultiBackend
+from yolov5.utils.general import non_max_suppression, scale_boxes
+from yolov5.utils.augmentations import letterbox
 
 # ================== LOAD MODEL (CPU ONLY) ==================
 @st.cache_resource
